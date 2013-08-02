@@ -2,7 +2,3 @@
 # All this logic will automatically be available in application.js.
 
 jQuery = ->
-  $('button#new_game').on('click', create_game)
-
-
-  create_game = () ->

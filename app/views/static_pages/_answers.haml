@@ -1,4 +1,5 @@
 %ul
   - answers.each do |answer|
-    %li= answer.string
+    %li 
+      = link_to answer.string, "/validate_answer/#{answer.id}", remote: true
 .answer
