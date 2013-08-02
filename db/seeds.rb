@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Question.destroy_all
+Answer.destroy_all
 
 a = Question.create(query:"What is the capital of France")
 %w(Paris Washington Panama London).each do |answer|

@@ -1,3 +1,4 @@
-- answers.each do |answer|
-  .answer{"data-answer_id": "#{answer.id}"}
-    = answer.string
+%ul
+  - answers.each do |answer|
+    %li= answer.string
+.answer

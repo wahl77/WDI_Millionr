@@ -6,6 +6,9 @@ class StaticPagesController < ApplicationController
   end
 
   def new_game
+
+    @question = Question.all.sample(1).first
+
     respond_to do |format|
       format.js { render layout:false }
     end
