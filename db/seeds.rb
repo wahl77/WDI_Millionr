@@ -17,3 +17,21 @@ a = Question.create(query:"What is the capital of France")
   end
   a.answers << b
 end
+
+a = Question.create(query:"What is the capital of UK")
+%w(Paris Washington Panama London).each do |answer|
+  b = Answer.create(string: answer)
+  if answer == "London"
+    b.is_correct_answer = true
+  end
+  a.answers << b
+end
+
+a = Question.create(query:"What is the capital of Japan")
+%w(Paris Washington Panama Tokyo).each do |answer|
+  b = Answer.create(string: answer)
+  if answer == "Tokyo"
+    b.is_correct_answer = true
+  end
+  a.answers << b
+end
