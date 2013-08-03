@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :answer do
-    question nil
-    string "MyString"
+    question 
+    string "Answer A"
     is_correct_answer false
   end
 end

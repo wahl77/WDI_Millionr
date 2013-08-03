@@ -2,6 +2,6 @@
 
 FactoryGirl.define do
   factory :question do
-    query "MyString"
+    query "Question 1"
   end
 end
