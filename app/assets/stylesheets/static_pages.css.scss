@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  margin: auto;
+  max-width: 800px;
+}
+
 #players {
   overflow: hidden;
 }
@@ -11,12 +16,16 @@
   margin: 10px;
   background-color: red;
   float: left;
+  font: white;
+  font-size: 30px;
+  text-align: center;
 }
 
-a {
-  display: block;
-}
 
 .player_turn{
   background-color: green;
+}
+
+#question, #answers {
+  display: inline;
 }

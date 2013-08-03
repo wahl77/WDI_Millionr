@@ -2,16 +2,20 @@
   This is the static_pages
 
 #players
-- 3.times do |i| # There are three players
-  .player{id: "player_#{i}"}
-    0
+  - @num_players.times do |i| # There are three players
+    .player{id: "player_#{i}"}
+      0
 
 %br
 #question
 
 #answers
 
+= link_to "Start Game", new_game_path, remote: true, id: "start_game"
 
-= link_to "New Game", new_game_path, remote: true
+= form_tag "/" do |f|
+  = select_tag :num_players, options_for_select([['1', 1], ['2', 2], ['3', 3], ['4', 4]])
+
+  = submit_tag "New Game"
 
 

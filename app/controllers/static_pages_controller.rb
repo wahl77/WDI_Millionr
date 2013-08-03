@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def index
+    @num_players = params[:num_players] || 3
+    @num_players = @num_players.to_i
   end
 
   def new_question

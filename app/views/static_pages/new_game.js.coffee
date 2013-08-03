@@ -1,3 +1,4 @@
+$('#start_game').hide()
 player = $('.player_turn')
 <% if @correct %>
 
