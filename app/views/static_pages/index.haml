@@ -1,17 +1,21 @@
-%h1 
-  This is the static_pages
+= link_to "New Game", new_game_path, remote: true
+
+
+%h1.trivia
+  WDI TRIVIA!!!
 
 #players
 - 3.times do |i| # There are three players
   .player{id: "player_#{i}"}
-    0
+    .p 0
 
 %br
+
 #question
 
 #answers
 
 
-= link_to "New Game", new_game_path, remote: true
+
 
 

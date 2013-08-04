@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(:version => 20130802195504) do
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
     t.string   "string"
-    t.boolean  "is_correct_answer"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.boolean  "is_correct_answer", :default => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
   end
 
   add_index "answers", ["question_id"], :name => "index_answers_on_question_id"

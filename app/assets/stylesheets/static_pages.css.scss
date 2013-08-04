@@ -2,19 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.game {
+  margin: 0px auto;
+  width: 600px;
+  height: 400px;
+  margin-top: 100px;
+  // margin-left: 200px;
+  background: #c0c0c0;
+  border-radius: 12px;
+  opacity: .8;
+}
+
+.trivia {
+  font-family: helvetica;
+  font-size: 3em;
+  color: gold;
+  text-shadow: 1px;
+  text-align: center;
+  padding: 40px;
+  text-decoration: blink;
+}
+
 #players {
   overflow: hidden;
 }
 .player {
   width: 100px;
   height: 100px;
-  margin: 10px;
+  margin-left: 60px;
+  padding: 10px;
   background-color: red;
   float: left;
+  border-radius: 50%;
+  box-shadow: 5px 5px 3px #888888;
 }
 
 a {
   display: block;
+  font-size: 2em;
+  margin-left: 100px;
 }
 
 .player_turn{
