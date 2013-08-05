@@ -7,21 +7,17 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
 
-<<<<<<< HEAD
-  = yield
-=======
-.header
-  .new_game
-    = link_to "New Game", new_game_path, remote: true
+  .header
+    .new_game
+      = link_to "New Game", new_game_path, remote: true
 
-.game
-  = yield
+  .game
+    = yield
 
 
-.questions
+  .questions
 
-  #question
+    #question
 
-  #answers
+    #answers
 
->>>>>>> styling
