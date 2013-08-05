@@ -18,12 +18,13 @@ class StaticPagesController < ApplicationController
   def validate_answer
     @correct = false
     answer = Answer.find(params[:id])
+    @answer_id = answer.id
 
     if answer.is_correct?
       @question = Question.all.sample(1).first
       @correct = true
     else
-      #
+      @correct_answer_id = Answer.find(@answer_id).correct_answer_id
     end
 
     respond_to do |format|

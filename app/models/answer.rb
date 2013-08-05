@@ -6,4 +6,15 @@ class Answer < ActiveRecord::Base
   def is_correct?
     return is_correct_answer
   end
+
+  def correct_answer_id
+    if self.is_correct?
+      return self.id
+    else
+      self.question.answers.each do |answer|
+        return answer.id if answer.is_correct_answer
+      end
+    end
+  end
+
 end

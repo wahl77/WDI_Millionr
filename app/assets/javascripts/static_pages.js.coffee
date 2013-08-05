@@ -10,7 +10,7 @@ jQuery ->
     else
       if (event.keyCode < 58 && event.keyCode >= 48)
         players = $('.player')
-        players.eq(event.keyCode - 48).addClass("player_turn")
+        players.eq(event.keyCode - 49).addClass("player_turn")
       else
         console.log "Sorry, no players"
 
