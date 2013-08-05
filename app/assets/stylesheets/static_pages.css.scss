@@ -2,34 +2,62 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.header {
+  background-color: black;
+  margin-top: 0;
+  height: 70px;
+  width:100%;
+  overflow: visible;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  background-color: silver;
+  background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+  linear-gradient(155deg, #d00 23px, transparent 23px),
+  linear-gradient(335deg, #b00 23px, transparent 23px),
+  linear-gradient(155deg, #d00 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
 .game {
   margin: 0px auto;
   width: 600px;
-  height: 400px;
-  margin-top: 100px;
+  height: 300px;
+  margin-top: 60px;
   // margin-left: 200px;
-  background: #c0c0c0;
+  background: #FFFFFF;
   border-radius: 12px;
-  opacity: .8;
+  opacity: .9;
 }
 
-.trivia {
+.title {
+  display: inline;
+  position: relative;
+  letter-spacing: 5px; /* This will push it together giving us a nice 3D vibe */
+  text-transform: uppercase;
   font-family: helvetica;
-  font-size: 3em;
-  color: gold;
-  text-shadow: 1px;
-  text-align: center;
-  padding: 40px;
-  text-decoration: blink;
+  font-size: 4em;
+  margin-top: 40px;
+  margin-left: 100px;
+  // margin: 0px auto;
 }
 
-#players {
-  overflow: hidden;
-}
+// #players {
+//   overflow: hidden;
+// }
+
 .player {
   width: 100px;
   height: 100px;
   margin-left: 60px;
+  margin-top: 60px;
   padding: 10px;
   background-color: red;
   float: left;
@@ -37,12 +65,54 @@
   box-shadow: 5px 5px 3px #888888;
 }
 
+.new_game {
+  padding: 20px;
+  margin-left: 30px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-color: gold;
+
+}
+
 a {
   display: block;
   font-size: 2em;
-  margin-left: 100px;
+  text-decoration: none;
+  color: gold;
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration: line;
 }
 
 .player_turn{
   background-color: green;
+}
+
+.questions {
+  margin: 0px auto;
+  width: 600px;
+  height: 200px;
+  margin-top: 40px;
+  // margin-left: 200px;
+  background: black;
+  border-radius: 12px;
+  opacity: .9;
+}
+
+#question {
+  font-family: helvetica;
+  // z-index: 3000;
+  font-size: 1.5em;
+  margin-top: 30px;
+
+  color: white;
+}
+
+#answers {
+  font-family: helvetica;
+  margin-left: 320px;
+  font-color: white;
+
 }
