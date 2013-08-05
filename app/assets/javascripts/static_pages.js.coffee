@@ -2,10 +2,10 @@
 # All this logic will automatically be available in application.js.
 
 jQuery ->
-  
+
   get_player = (event) ->
     players_turn = $('.player_turn')
-    if players_turn.length > 0 
+    if players_turn.length > 0
       # do nothign
     else
       if (event.keyCode < 58 && event.keyCode >= 48)

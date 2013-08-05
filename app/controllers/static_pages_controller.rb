@@ -1,7 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
-    @num_players = params[:num_players] || 3
-    @num_players = @num_players.to_i
+    @num_players = params[:num_players].to_i || 3
   end
 
   def new_question
@@ -13,14 +12,14 @@ class StaticPagesController < ApplicationController
     respond_to do |format|
       format.js { render layout:false }
     end
-    
+
   end
 
   def validate_answer
     @correct = false
     answer = Answer.find(params[:id])
 
-    if answer.is_correct? 
+    if answer.is_correct?
       @question = Question.all.sample(1).first
       @correct = true
     else
@@ -28,7 +27,7 @@ class StaticPagesController < ApplicationController
     end
 
     respond_to do |format|
-      format.js{ 
+      format.js{
         render template:"static_pages/new_game", layout: false
       }
     end
