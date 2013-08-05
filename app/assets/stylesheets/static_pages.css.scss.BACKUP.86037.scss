@@ -2,12 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+<<<<<<< HEAD
+body {
+  margin: auto;
+  max-width: 800px;
+  background: url(http://www.gamershell.com/static/screenshots/1343/512296_full.jpg) no-repeat center center fixed;
+}
+
+#players {
+  overflow: hidden;
+  display: table;
+  margin: 0 auto;
+=======
 .header {
   background-color: black;
   margin-top: 0;
   height: 70px;
   width:100%;
   overflow: visible;
+>>>>>>> styling
 }
 
 html, body {
@@ -56,6 +69,26 @@ body {
 .player {
   width: 100px;
   height: 100px;
+<<<<<<< HEAD
+  margin: 10px 20px;
+  background-color: grey;
+  float: left;
+  font: white;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  opacity: 0.75;
+}
+
+.player p{
+  line-height: 70px;
+  margin: 0;
+}
+
+.title {
+  font-size: 15px;
+  margin-top: 7.5px;
+=======
   margin-left: 60px;
   margin-top: 60px;
   padding: 10px;
@@ -84,12 +117,73 @@ a {
 a:hover {
   font-style: italic;
   text-decoration: line;
+>>>>>>> styling
 }
 
-.player_turn{
+.player_turn {
   background-color: green;
 }
 
+<<<<<<< HEAD
+// #question, #answers {
+//   display: inline;
+// }
+
+h1 {
+  text-align: center;
+}
+
+#header {
+  margin: 25px auto 10px;
+  background-color: grey;
+  border-radius: 5px;
+  opacity: 0.75;
+}
+
+#question, #answers {
+  overflow: hidden;
+  background-color: grey;
+  border-radius: 5px;
+  opacity: 0.75;
+  margin: 25px auto;
+  display: block;
+  width: 350px;
+  p {
+    margin-left: 15px;
+  }
+  ul {
+    padding: 2px;
+  }
+  li {
+    list-style: none;
+    border: solid white 1px;
+    border-radius: 5px;
+    margin: 7.5px;
+    padding: 2px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+#game-control {
+  position: absolute;
+  bottom: 50px;
+  background-color: grey;
+  border-radius: 5px;
+  opacity: 0.75;
+  padding: 5px;
+}
+
+#game-control input {
+  color: buttontext;
+}
+
+*{
+  color: white;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+=======
 .questions {
   margin: 0px auto;
   width: 600px;
@@ -115,4 +209,5 @@ a:hover {
   margin-left: 320px;
   font-color: white;
 
+>>>>>>> styling
 }

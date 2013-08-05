@@ -1,26 +1,18 @@
-#header
-  %h1
-    Who Wants To Be A Millionr?!
+
+
+
+%h1.title
+  WDI Trivia
 
 #players
-  - @num_players.times do |i| # There are three players
-    .player{id: "player_#{i}"}
-      .title= "Player #{i+1}"
-      %p 0
+- 3.times do |i| # There are three players
+  .player{id: "player_#{i}"}
+    .p 0
 
-  %br
+%br
 
-#question
-
-#answers
 
 #game-control
   = link_to "Start Game", new_game_path, remote: true, id: "start_game"
-
-  = form_tag "/" do |f|
-    = label_tag "Number of Players: "
-    = select_tag :num_players, options_for_select([['1', 1], ['2', 2], ['3', 3], ['4', 4]], @num_players)
-
-    = submit_tag "New Game"
 
 
